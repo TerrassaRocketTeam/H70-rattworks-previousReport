@@ -1,7 +1,7 @@
 
 %% Settings
-Tmin = -10; % Min -90 ºC
-Tmax = 36; % Max = 36 ºC
+Tmin = -10; % Min -90 ?C
+Tmax = 36; % Max = 36 ?C
 isoTemps = [0, 10, 20, 30];
 % end settings
 
@@ -22,14 +22,14 @@ legTexts = {};
 
 % Plot the isolines
 for isoT = isoTemps
-    isoT = isoT + 273.2;
-    plot([1/ro_l_fun_T(isoT), 1/ro_g_fun_T(isoT)], [P_fun_T(isoT)./100000, P_fun_T(isoT)./100000]);
-    legTexts{end + 1} = ['isoTemp at ' num2str(isoT - 273.2) 'ºC'];
+  isoT = isoT + 273.2;
+  plot([1/ro_l_fun_T(isoT), 1/ro_g_fun_T(isoT)], [P_fun_T(isoT)./100000, P_fun_T(isoT)./100000]);
+  legTexts{end + 1} = ['isoTemp at ' num2str(isoT - 273.2) 'ºC'];
 end
 
 % Plot the bell
-p1 = plot(v_g, P, 'Color', [0 0.4470 0.7410]);
-p2 = plot(v_l, P, 'Color', [0 0.4470 0.7410]);
+p1 = plot(v_g, P, 'Color', 'k');
+p2 = plot(v_l, P, 'Color', 'k');
 
 % Add the legend
 legTexts{end + 1} = 'Phase change';

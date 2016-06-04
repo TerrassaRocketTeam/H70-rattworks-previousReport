@@ -10,24 +10,18 @@
 
 %\usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage{amsmath,amsfonts,amsthm} % Required for some math elements
+\usepackage{graphicx}
+\graphicspath{ {./imgs/} }
+
+\usepackage{float} % Placements of graphics
+
+\usepackage{cite}
 
 \usepackage{url}
 
 %%% Custom sectioning
 \usepackage{sectsty}
 \allsectionsfont{\centering \normalfont\scshape}
-
-
-%%% Custom headers/footers (fancyhdr package)
-\usepackage{fancyhdr}
-\pagestyle{fancyplain}
-\fancyhead{}                      % No page header
-\fancyfoot[L]{}                      % Empty 
-\fancyfoot[C]{}                      % Empty
-\fancyfoot[R]{\thepage}                  % Pagenumbering
-\renewcommand{\headrulewidth}{0pt}      % Remove header underlines
-\renewcommand{\footrulewidth}{0pt}        % Remove footer underlines
-\setlength{\headheight}{13.6pt}
 
 
 %%% Equation and float numbering
@@ -59,12 +53,15 @@
 \maketitle % Insert the title, author and date
 \horrule{0.5pt}
 
-\pagestyle{headings}
-
 \input{parts/introduction}
 \input{parts/howitworks}
 \input{parts/gasStudies}
 \input{parts/controlSoftware}
 \input{parts/safetyFeatures}
+
+Blablabla said Nobody ~\cite{Nobody06}.
+
+\bibliography{bibliography}{}
+\bibliographystyle{plain}
 
 \end{document}
