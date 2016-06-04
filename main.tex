@@ -5,8 +5,10 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage{multicol}
 \usepackage[T1]{fontenc}
 \usepackage{fourier}
+\usepackage{lmodern}
 
 %\usepackage[protrusion=true,expansion=true]{microtype}
 \usepackage{amsmath,amsfonts,amsthm} % Required for some math elements
@@ -36,12 +38,24 @@
 %  DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Study of the operation of the H70 RATTworks hybrid rocket motor} % Title
+\title{Considerations about the static fire of the RATTworks H70 rocket motor} % Title
 
 \author{Pep \textsc{Rodeja Ferrer} \and Jordi \textsc{Díaz Montcunill}} % Author name
 
 \date{\today} % Date for the report
 
+%
+% Page headers and footers
+%
+\usepackage{mwe}
+\usepackage[headsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ohead[{\includegraphics[height=1.2cm]{logo-etseiaat.jpg}}]{\includegraphics[height=1cm]{logo-etseiaat.jpg}}
+\chead{}
+\ihead[{\includegraphics[height=2cm]{TRT_logo.jpg}}]{\includegraphics[height=1cm]{TRT_logo.jpg}}
+
+\cfoot[{\thepage}]{\thepage}
 
 %----------------------------------------------------------------------------------------
 %  DOCUMENT BEGIN
@@ -50,6 +64,8 @@
 \begin{document}
 
 \maketitle % Insert the title, author and date
+\center
+\center{by Terrassa Rocket Team}
 \horrule{0.5pt}
 
 \input{parts/introduction}
