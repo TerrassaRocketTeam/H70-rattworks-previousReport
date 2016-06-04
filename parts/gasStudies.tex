@@ -2,11 +2,19 @@
 
 \section*{Gas pressure and state}
 
-A basic study of the gas state and pressure inside the tanks has been conducted. To do so, the properties of the $N_2O$ have been extracted from \cite{n2oReference}. With the equations presented on the former source, a simple Matlab code has been built that generate the chart in \ref{fig:N2O_P_V_graph}, said code can be found in \cite{MatlabPVchart}.
+A basic theoretical study of the gas state and pressure inside the tanks has been conducted. To do so, the properties of the $N_2O$ have been extracted from \cite{n2oReference}. With the equations presented on the former source, a simple Matlab code has been built that generate the chart in \ref{fig:N2O_P_V_graph}, said code can be found in \cite{MatlabPVchart}.
 
-\begin{figure}[H]
+From the sources XXXX it has been extracted that the pressure inside the tank remains constant until the tank is almost empty. The reason why this happens is because inside the tank there is $N_2O$ in both vapor and liquid states. When this happens the pressure inside the tank remains constant at a value named vapor pressure.
+
+This state where the two phases co-exist can only happen at a given pressure temperature and specific volume of the substance. A graphic representing this can be seen on the figure \ref{fig:N2O_P_V_graph}.
+
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth]{N2O_pressure_volume.png}
-  \caption{Empty motor}
+  \caption{P vs v chart of $N_2O$}
   \label{fig:N2O_P_V_graph}
 \end{figure}
+
+The tank currently used to supply the gas is 5L and stored 3.75Kg of gas when it was full. That is $(0.005 m^3) / (3.75 kg)$ = $0.00133 m^3/kg$. Looking at the previous chart it's possible to see that this point was at the limit of the vapor-liquid zone and thus the tank was probably full of liquid at atmospheric temperature. However, this tank has already been used once and it's estimated that one fourth of the content is gone. Then, the current specific volume is $(0.005 m^3) / (2.625 kg)$ = $0.0019 m^3/kg$. This value ensures that the substance will remain at vapor-liquid phase at any reasonable temperature.
+
+When the rocket engine is connected to the gas tank and the valves are open, the pressure and the specific volume stabilize between the two recipients; this fills the engine integrated tank with liquid and vapor nitrous oxide.
