@@ -1,0 +1,70 @@
+
+
+%----------------------------------------------------------------------------------------
+%  PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+%\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm} % Required for some math elements
+
+\usepackage{url}
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}                      % No page header
+\fancyfoot[L]{}                      % Empty 
+\fancyfoot[C]{}                      % Empty
+\fancyfoot[R]{\thepage}                  % Pagenumbering
+\renewcommand{\headrulewidth}{0pt}      % Remove header underlines
+\renewcommand{\footrulewidth}{0pt}        % Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}    % Equationnumbering: section.eq#
+\numberwithin{figure}{section}      % Figurenumbering: section.fig#
+\numberwithin{table}{section}        % Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}   % Horizontal rule
+
+%----------------------------------------------------------------------------------------
+%  DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Study of the operation of the H70 RATTworks hybrid rocket motor} % Title
+
+\author{Pep \textsc{Rodeja Ferrer} \and Jordi \textsc{Díaz Montcunill}} % Author name
+
+\date{\today} % Date for the report
+
+
+%----------------------------------------------------------------------------------------
+%  DOCUMENT BEGIN
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+\horrule{0.5pt}
+
+\pagestyle{headings}
+
+\input{parts/introduction}
+\input{parts/howitworks}
+\input{parts/gasStudies}
+\input{parts/controlSoftware}
+\input{parts/safetyFeatures}
+
+\end{document}
