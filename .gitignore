@@ -2,3 +2,9 @@
 *.log
 *.pdf
 *.gz
+*.out
+*.xml
+*.bbl
+*.blg
+*.bcf
+main-blx.bib

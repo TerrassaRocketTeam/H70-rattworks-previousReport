@@ -15,9 +15,8 @@
 
 \usepackage{float} % Placements of graphics
 
-\usepackage{cite}
-
-\usepackage{url}
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{bibliography}
 
 %%% Custom sectioning
 \usepackage{sectsty}
@@ -59,9 +58,6 @@
 \input{parts/controlSoftware}
 \input{parts/safetyFeatures}
 
-Blablabla said Nobody ~\cite{Nobody06}.
-
-\bibliography{bibliography}{}
-\bibliographystyle{plain}
+\printbibliography
 
 \end{document}
