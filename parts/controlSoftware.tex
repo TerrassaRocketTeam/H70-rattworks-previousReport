@@ -6,15 +6,29 @@ In order to control the launch remotely a simple electronic system has been buil
 
 \subsection*{Software}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{controlPanel.png}
+  \caption{Software screenshot}
+  \label{fig:softwareScreenshot}
+\end{figure}
+
 After the server is initialized, clients can connect to it using an standard web-browser from any device. Any client is able to see the data from the sensors and, after proper authentication, they are able to control the gas valve and, the continuity check of the ignitor and the ignitor trigger. The data is always stored in the server at the full sampling rate, but the clients only receive the mean of the last 0.1 seconds.
 
 The server is implemented using javascript and node.js. The server connects to the serial port using the `'serialport' package and uses `'websockets' to send the sensors data in real time to the clients. The interface between the data-logger and the server has been specially developed for this program based on previous experience writing an open-source library for Matlab for the same data-logger.
 
 The clients web pages are implemented in React and Redux from Facebook. The charts use the library `'highcharts'.
 
-The full implementation of the code can be found on XXXXXX. An screenshot of the clients software can be seen on Figure XXXXXX.
+The full implementation of the code can be found on \cite{hybridControlPanelGithub}. An screenshot of the clients software can be seen on Figure \ref{fig:softwareScreenshot}.
 
 \subsection*{Electronics}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{electronica.jpg}
+  \caption{Electronics}
+  \label{fig:electronica}
+\end{figure}
 
 The electronics to connect the sensors and actuators with the DI-155 data-logger from DataQ are also custom for this case.
 
@@ -32,4 +46,4 @@ And 3 actuators:
   \item 1 gas electrovavle trigger
 \end{itemize}
 
-An image of the electronics can be seen on the following image XXXX.
+An image of the electronics can be seen on the previous Figure \ref{fig:electronica}.
