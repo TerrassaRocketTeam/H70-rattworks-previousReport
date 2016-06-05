@@ -2,40 +2,56 @@
 
 \section*{How does the engine work?}
 
-\begin{figure}[H]
+First of all, we will explain how is connected the gas circuit, then the ignition sequence and finally, how the combustion starts.
+
+\subsection*{Gas circuit}
+
+The gas circuit begins in the tank, where we can find the gas at the approximate pressure of 60 bars (depending on the tank temperature). A tube joins the tank with the engine chamber, passing through the nozzle and the rocket candy (made of white sugar and potassium nitrate). The rocket candy is connected to an ignitor, when fired, it provides the necessary energy to start the combustion. Before the tubes enter the engine it has to go through an electro-valve that is remotely controlled. To ensure that the valve works, there are two pressure sensors before and after the electro-valve. These sensors will send their readings to the control panel. If the valve fails to open or stops before the tank is full, a pressure difference will be detected thanks to the pressure sensors.
+
+\subsection*{Ignition sequence}
+
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth,height=2.5cm,keepaspectratio]{seq01.png}
   \caption{Empty motor}
   \label{fig:emptyMotor}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth,height=2.5cm,keepaspectratio]{seq04.png}
   \caption{Motor filled with $N_2O$ and venting}
   \label{fig:filledMotor}
 \end{figure}
 
-\begin{figure}[H]
+After connecting all the tubes, the ignitor (and the ignitor continuity), valves and sensors and make sure there are no gas escapes. The valves will open to fill the engine gas chamber as seen on Figures \ref{fig:emptyMotor} and \ref{fig:filledMotor}. Once the chamber is full, the electro-valve and the tank valve will be closed.
+
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth,height=2.5cm,keepaspectratio]{seq06.png}
   \caption{The ignitor starts the combustion of the solid grain}
   \label{fig:startSolidBurnMotor}
 \end{figure}
 
-\begin{figure}[H]
+Finally, after checking all the steps done and considering that the engine is sure to ignite, we will activate the ignitor remotely through a computer as seen on Figure \ref{fig:solidBurningMotor}
+
+\subsection*{Combustion}
+
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth,height=2.5cm,keepaspectratio]{seq08.png}
   \caption{The combustion of the solid grain burns the gas tube}
   \label{fig:solidBurningMotor}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.8\textwidth,height=2.5cm,keepaspectratio]{seq09.png}
   \caption{The gas leaks through the tube}
   \label{fig:gasLeakingMotor}
 \end{figure}
+
+The combustion starts with the spark of the ignitor, which is close to the rocket candy as seen on Figure \ref{fig:solidBurningMotor}. The rocket candy, which is solid fuel, burns rapidly, destroying the walls of the gas tube as seen on Figure \ref{fig:gasLeakingMotor}.
 
 \begin{figure}[H]
   \centering
@@ -43,3 +59,5 @@
   \caption{The motor is now functioning}
   \label{fig:functioningMotor}
 \end{figure}
+
+This damage causes a leak of gas from the tube that burns rapidly too. Finally, this existing flame is able to continue burning the gas of the chamber in conjunction with the polypropylene in the gas chamber, the rocket fully ignited can be seen on Figure \ref{fig:functioningMotor}
