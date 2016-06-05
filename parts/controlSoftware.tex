@@ -15,9 +15,9 @@ In order to control the launch remotely, a simple electronic system has been bui
 
 After the server is initialized, clients can connect to it using a standard web-browser from any device. Any client is able to see the data from the sensors and, after proper authentication, they are able to control the gas valve and, the continuity check of the ignitor and the ignitor trigger. The data is always stored in the server at the full sampling rate, but the clients only receive the mean of the last 0.1 seconds.
 
-The server is implemented using javascript and node.js. The server connects to the serial port using the `'serialport' package and uses `'websockets' to send the sensors data in real time to the clients. The interface between the data-logger and the server has been specially developed for this program based on previous experience writing an open-source library for Matlab for the same data-logger.
+The server is implemented using javascript and node.js. The server connects to the serial port using the "serialport" package and uses "websockets" to send the sensors data in real time to the clients. The interface between the data-logger and the server has been specially developed for this program based on previous experience writing an open-source library for Matlab for the same data-logger.
 
-The clients web pages are implemented in React and Redux from Facebook. The charts use the library `'highcharts'.
+The clients web pages are implemented in React and Redux from Facebook. The charts use the library "highcharts".
 
 The full implementation of the code can be found on \cite{hybridControlPanelGithub}. A screenshot of the clients software can be seen on Figure \ref{fig:softwareScreenshot}.
 
